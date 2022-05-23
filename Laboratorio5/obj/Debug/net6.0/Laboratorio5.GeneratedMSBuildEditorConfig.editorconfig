@@ -23,8 +23,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Diego/Desktop/U/Inge/labs/Laboratorio5B82227/Laboratorio5/Views/Paises/BorrarPais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpc2VzXEJvcnJhclBhaXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Diego/Desktop/U/Inge/labs/Laboratorio5B82227/Laboratorio5/Views/Paises/CrearPais.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpc2VzXENyZWFyUGFpcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Diego/Desktop/U/Inge/labs/Laboratorio5B82227/Laboratorio5/Views/Paises/EditarPais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpc2VzXEVkaXRhclBhaXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Diego/Desktop/U/Inge/labs/Laboratorio5B82227/Laboratorio5/Views/Paises/Index.cshtml]

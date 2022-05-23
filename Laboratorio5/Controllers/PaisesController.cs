@@ -45,5 +45,83 @@ namespace Laboratorio5.Controllers
                 return View();
             }
         }
+
+        [HttpGet]
+        public ActionResult EditarPais(int? identificador)
+        {
+            ActionResult vista;
+            try 
+            {
+                var paisesHandler = new PaisesHandler();
+                var pais = paisesHandler.ObtenerPaises().Find(model => model.Id == identificador);
+                if(pais == null)
+                {
+                    vista = RedirectToAction("Index");
+                }
+                else 
+                {
+                    vista = View(pais);
+                }
+            }
+            catch 
+            {
+                vista = RedirectToAction("Index");
+            }
+            return vista;
+        }
+
+        [HttpPost]
+        public ActionResult EditarPais(PaisModel pais)
+        {
+            try
+            {
+                var paisesHandler = new PaisesHandler();
+                paisesHandler.EditarPais(pais);
+                return RedirectToAction("Index", "Paises");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        [HttpGet]
+        public ActionResult BorrarPais(int? identificador)
+        {
+            ActionResult vista;
+            try
+            {
+                var paisesHandler = new PaisesHandler();
+                var pais = paisesHandler.ObtenerPaises().Find(model => model.Id == identificador);
+                if (pais == null)
+                {
+                    vista = RedirectToAction("Index");
+                }
+                else
+                {
+                    vista = View(pais);
+                }
+            }
+            catch
+            {
+                vista = RedirectToAction("Index");
+            }
+            return vista;
+        }
+
+        [HttpPost]
+        public ActionResult BorrarPais(PaisModel pais)
+        {
+            try
+            {
+                var paisesHandler = new PaisesHandler();
+                paisesHandler.BorrarPais(pais);
+                return RedirectToAction("Index", "Paises");
+            }
+            catch
+            {
+                return View();
+            }
+        }
     }
 }
